@@ -1,0 +1,336 @@
+
+Processing roo2DfitDilepton.C("Full_Nuisance")...
+Ratio = 2.43276
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(DHttbb): fit range of variable CSV2 expanded to nearest bin boundaries: [0,1] --> [0,1]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(DHttbb): fit range of variable CSV3 expanded to nearest bin boundaries: [0,1] --> [0,1]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(DHttbj): fit range of variable CSV2 expanded to nearest bin boundaries: [0,1] --> [0,1]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(DHttbj): fit range of variable CSV3 expanded to nearest bin boundaries: [0,1] --> [0,1]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(DHttccLF): fit range of variable CSV2 expanded to nearest bin boundaries: [0,1] --> [0,1]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(DHttccLF): fit range of variable CSV3 expanded to nearest bin boundaries: [0,1] --> [0,1]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(DHBkgtt): fit range of variable CSV2 expanded to nearest bin boundaries: [0,1] --> [0,1]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(DHBkgtt): fit range of variable CSV3 expanded to nearest bin boundaries: [0,1] --> [0,1]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(DHBkgOther): fit range of variable CSV2 expanded to nearest bin boundaries: [0,1] --> [0,1]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(DHBkgOther): fit range of variable CSV3 expanded to nearest bin boundaries: [0,1] --> [0,1]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(DHBkgDD): fit range of variable CSV2 expanded to nearest bin boundaries: [0,1] --> [0,1]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(DHBkgDD): fit range of variable CSV3 expanded to nearest bin boundaries: [0,1] --> [0,1]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(DHData): fit range of variable CSV2 expanded to nearest bin boundaries: [0,1] --> [0,1]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(DHData): fit range of variable CSV3 expanded to nearest bin boundaries: [0,1] --> [0,1]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj) importing RooRealVar::CSV2
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj) importing RooRealVar::CSV3
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj) importing RooRealVar::Lumi_nom
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj) importing RooRealVar::Effttjj_nom
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj) importing RooRealVar::Effttbb_nom
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj) importing RooRealVar::Accttjj_nom
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj) importing RooRealVar::Accttbb_nom
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj) importing RooFormulaVar::Vis_Xsecttbb_Xsecttjj
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj) importing RooRealVar::Vis_Xsecttbb
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj) importing RooRealVar::Vis_Xsecttjj
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj) importing RooFormulaVar::Full_Xsecttbb_Xsecttjj
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj) importing RooRealVar::Full_Xsecttbb
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj) importing RooRealVar::Full_Xsecttjj
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj) importing RooRealVar::NBkgtt
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj) importing RooRealVar::NBkgOther
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj) importing RooRealVar::NBkgDD
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj) importing dataset DHttbb
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj) importing RooHistPdf::HPttbb
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj) importing dataset DHttbj
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj) importing RooHistPdf::HPttbj
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj) importing dataset DHttccLF
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj) importing RooHistPdf::HPttccLF
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj) importing dataset DHBkgtt
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj) importing RooHistPdf::HPBkgtt
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj) importing dataset DHBkgOther
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj) importing RooHistPdf::HPBkgOther
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj) importing dataset DHBkgDD
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj) importing RooHistPdf::HPBkgDD
+
+RooWorkspace(Fit ttbb/ttjj) Fit ttbb/ttjj contents
+
+variables
+---------
+(Accttbb_nom,Accttjj_nom,CSV2,CSV3,Effttbb_nom,Effttjj_nom,Full_Xsecttbb,Full_Xsecttjj,Lumi_nom,NBkgDD,NBkgOther,NBkgtt,Vis_Xsecttbb,Vis_Xsecttjj)
+
+p.d.f.s
+-------
+RooAddPdf::Full_Model[ Full_Model_1 * Full_ttjj + Full_Model_2 * HPBkgtt + NBkgOther * HPBkgOther + NBkgDD * HPBkgDD ] = 270.64
+RooAddPdf::Full_ttjj[ Full_XsecRatiottbbttjj * HPttbb + Full_XsecRatiottbjttjj * HPttbj + [%] * HPttccLF ] = 292.23
+RooHistPdf::HPBkgDD[ pdfObs=(CSV2,CSV3) ] = 0
+RooHistPdf::HPBkgOther[ pdfObs=(CSV2,CSV3) ] = 14.1063
+RooHistPdf::HPBkgtt[ pdfObs=(CSV2,CSV3) ] = 105.462
+RooHistPdf::HPttbb[ pdfObs=(CSV2,CSV3) ] = 27.4905
+RooHistPdf::HPttbj[ pdfObs=(CSV2,CSV3) ] = 39.0859
+RooHistPdf::HPttccLF[ pdfObs=(CSV2,CSV3) ] = 323.496
+RooAddPdf::Vis_Model[ Vis_Model_1 * Vis_ttjj + Vis_Model_2 * HPBkgtt + NBkgOther * HPBkgOther + NBkgDD * HPBkgDD ] = 270.432
+RooAddPdf::Vis_ttjj[ Vis_XsecRatiottbbttjj * HPttbb + Vis_XsecRatiottbjttjj * HPttbj + [%] * HPttccLF ] = 292.164
+
+functions
+--------
+RooFormulaVar::Accttbbttjj[ actualVars=(Accttbb_nom,Accttjj_nom) formula="Accttbb_nom/Accttjj_nom" ] = 1.1
+RooFormulaVar::Effttbbttjj[ actualVars=(Effttbb_nom,Effttjj_nom) formula="Effttbb_nom/Effttjj_nom" ] = 2.31073
+RooProduct::Full_Model_1[ Full_Nttjj * Effttjj_nom * Accttjj_nom ] = 1388.2
+RooProduct::Full_Model_2[ Full_k * NBkgtt ] = 94.7416
+RooFormulaVar::Full_Nttjj[ actualVars=(Full_Xsecttjj,Lumi_nom) formula="Full_Xsecttjj*Lumi_nom" ] = 595795
+RooProduct::Full_XsecRatiottbbttjj[ Effttbbttjj * Accttbbttjj * Full_Xsecttbb_Xsecttjj ] = 0.0316489
+RooProduct::Full_XsecRatiottbjttjj[ 2.43276 * Full_XsecRatiottbbttjj ] = 0.0769942
+RooFormulaVar::Full_Xsecttbb_Xsecttjj[ actualVars=(Full_Xsecttbb,Full_Xsecttjj) formula="Full_Xsecttbb/Full_Xsecttjj" ] = 0.0124514
+RooProduct::Full_k[ Full_Xsecttjj * 0.003891 ] = 0.999987
+RooProduct::Vis_Model_1[ Vis_Nttjj * Effttjj_nom ] = 1377.4
+RooProduct::Vis_Model_2[ Vis_k * NBkgtt ] = 94.7049
+RooFormulaVar::Vis_Nttjj[ actualVars=(Vis_Xsecttjj,Lumi_nom) formula="Vis_Xsecttjj*Lumi_nom" ] = 11823.2
+RooProduct::Vis_XsecRatiottbbttjj[ Effttbbttjj * Vis_Xsecttbb_Xsecttjj ] = 0.0317159
+RooProduct::Vis_XsecRatiottbjttjj[ 2.43276 * Vis_XsecRatiottbbttjj ] = 0.0771572
+RooFormulaVar::Vis_Xsecttbb_Xsecttjj[ actualVars=(Vis_Xsecttbb,Vis_Xsecttjj) formula="Vis_Xsecttbb/Vis_Xsecttjj" ] = 0.0137255
+RooProduct::Vis_k[ Vis_Xsecttjj * 0.196 ] = 0.9996
+
+embedded datasets (in pdfs and functions)
+-----------------------------------------
+RooDataHist::DHttbb(CSV2,CSV3)
+RooDataHist::DHttbj(CSV2,CSV3)
+RooDataHist::DHttccLF(CSV2,CSV3)
+RooDataHist::DHBkgtt(CSV2,CSV3)
+RooDataHist::DHBkgOther(CSV2,CSV3)
+RooDataHist::DHBkgDD(CSV2,CSV3)
+
+generic objects
+---------------
+RooArgList::
+
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj including Sys) importing RooRealVar::CSV2
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj including Sys) importing RooRealVar::CSV3
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj including Sys) importing RooRealVar::Lumi_sys
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj including Sys) importing RooRealVar::Effttjj_sys
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj including Sys) importing RooRealVar::Effttbb_sys
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj including Sys) importing RooRealVar::Accttjj_sys
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj including Sys) importing RooRealVar::Accttbb_sys
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj including Sys) importing RooFormulaVar::Vis_Xsecttbb_Xsecttjj
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj including Sys) importing RooRealVar::Vis_Xsecttbb
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj including Sys) importing RooRealVar::Vis_Xsecttjj
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj including Sys) importing RooFormulaVar::Full_Xsecttbb_Xsecttjj
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj including Sys) importing RooRealVar::Full_Xsecttbb
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj including Sys) importing RooRealVar::Full_Xsecttjj
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj including Sys) importing RooRealVar::NBkgtt
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj including Sys) importing RooRealVar::NBkgOther
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj including Sys) importing RooRealVar::NBkgDD
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj including Sys) importing dataset DHttbb
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj including Sys) importing RooHistPdf::HPttbb
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj including Sys) importing dataset DHttbj
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj including Sys) importing RooHistPdf::HPttbj
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj including Sys) importing dataset DHttccLF
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj including Sys) importing RooHistPdf::HPttccLF
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj including Sys) importing dataset DHBkgtt
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj including Sys) importing RooHistPdf::HPBkgtt
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj including Sys) importing dataset DHBkgOther
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj including Sys) importing RooHistPdf::HPBkgOther
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj including Sys) importing dataset DHBkgDD
+[#1] INFO:ObjectHandling -- RooWorkspace::import(Fit ttbb/ttjj including Sys) importing RooHistPdf::HPBkgDD
+[#1] INFO:ObjectHandling -- RooWorkSpace::import(Fit ttbb/ttjj including Sys) Recycling existing object ConLumi created with identical factory specification
+[#1] INFO:ObjectHandling -- RooWorkSpace::import(Fit ttbb/ttjj including Sys) Recycling existing object ConEffttjj created with identical factory specification
+[#1] INFO:ObjectHandling -- RooWorkSpace::import(Fit ttbb/ttjj including Sys) Recycling existing object ConEffttbb created with identical factory specification
+
+RooWorkspace(Fit ttbb/ttjj including Sys) Fit ttbb/ttjj including Sys contents
+
+variables
+---------
+(Accttbb_sys,Accttjj_sys,CSV2,CSV3,Effttbb_sys,Effttjj_sys,Full_Xsecttbb,Full_Xsecttjj,Lumi_sys,NBkgDD,NBkgOther,NBkgtt,Vis_Xsecttbb,Vis_Xsecttjj,alphaAccttbb,alphaAccttjj,alphaEffttbb,alphaEffttjj,alphaLumi,kappaAccttbb,kappaAccttjj,kappaEffttbb,kappaEffttjj,kappaLumi)
+
+p.d.f.s
+-------
+RooGaussian::ConAccttbb[ x=alphaAccttbb mean=0 sigma=1 ] = 1
+RooGaussian::ConAccttjj[ x=alphaAccttjj mean=0 sigma=1 ] = 1
+RooGaussian::ConEffttbb[ x=alphaEffttbb mean=0 sigma=1 ] = 1
+RooGaussian::ConEffttjj[ x=alphaEffttjj mean=0 sigma=1 ] = 1
+RooGaussian::ConLumi[ x=alphaLumi mean=0 sigma=1 ] = 1
+RooProdPdf::Full_Model[ Full_ModelNoCon * ConLumi * ConEffttjj * ConEffttbb * ConAccttjj * ConAccttbb ] = 270.64
+RooAddPdf::Full_ModelNoCon[ Full_ModelNoCon_1 * Full_ttjj + Full_ModelNoCon_2 * HPBkgtt + Full_ModelNoCon_3 * HPBkgOther + NBkgDD * HPBkgDD ] = 270.64
+RooAddPdf::Full_ttjj[ Full_XsecRatiottbbttjj * HPttbb + Full_XsecRatiottbjttjj * HPttbj + [%] * HPttccLF ] = 292.23
+RooHistPdf::HPBkgDD[ pdfObs=(CSV2,CSV3) ] = 0
+RooHistPdf::HPBkgOther[ pdfObs=(CSV2,CSV3) ] = 14.1063
+RooHistPdf::HPBkgtt[ pdfObs=(CSV2,CSV3) ] = 105.462
+RooHistPdf::HPttbb[ pdfObs=(CSV2,CSV3) ] = 27.4905
+RooHistPdf::HPttbj[ pdfObs=(CSV2,CSV3) ] = 39.0859
+RooHistPdf::HPttccLF[ pdfObs=(CSV2,CSV3) ] = 323.496
+RooProdPdf::Vis_Model[ Vis_ModelNoCon * ConLumi * ConEffttjj * ConEffttbb ] = 270.432
+RooAddPdf::Vis_ModelNoCon[ Vis_ModelNoCon_1 * Vis_ttjj + Vis_ModelNoCon_2 * HPBkgtt + Vis_ModelNoCon_3 * HPBkgOther + NBkgDD * HPBkgDD ] = 270.432
+RooAddPdf::Vis_ttjj[ Vis_XsecRatiottbbttjj * HPttbb + Vis_XsecRatiottbjttjj * HPttbj + [%] * HPttccLF ] = 292.164
+
+functions
+--------
+RooProduct::Accttbb[ Accttbb_sys * betaAccttbb ] = 0.022
+RooFormulaVar::Accttbbttjj[ actualVars=(Accttbb,Accttjj) formula="Accttbb/Accttjj" ] = 1.1
+RooProduct::Accttjj[ Accttjj_sys * betaAccttjj ] = 0.02
+RooProduct::Effttbb[ Effttbb_sys * betaEffttbb ] = 0.2692
+RooFormulaVar::Effttbbttjj[ actualVars=(Effttbb,Effttjj) formula="Effttbb/Effttjj" ] = 2.31073
+RooProduct::Effttjj[ Effttjj_sys * betaEffttjj ] = 0.1165
+RooProduct::Full_ModelNoCon_1[ Full_Nttjj * Effttjj * Accttjj ] = 1388.2
+RooProduct::Full_ModelNoCon_2[ Full_k * NBkgtt * betaLumi ] = 94.7416
+RooProduct::Full_ModelNoCon_3[ NBkgOther * betaLumi ] = 50.1982
+RooFormulaVar::Full_Nttjj[ actualVars=(Full_Xsecttjj,Lumi) formula="Full_Xsecttjj*Lumi" ] = 595795
+RooProduct::Full_XsecRatiottbbttjj[ Effttbbttjj * Accttbbttjj * Full_Xsecttbb_Xsecttjj ] = 0.0316489
+RooProduct::Full_XsecRatiottbjttjj[ 2.43276 * Full_XsecRatiottbbttjj ] = 0.0769942
+RooFormulaVar::Full_Xsecttbb_Xsecttjj[ actualVars=(Full_Xsecttbb,Full_Xsecttjj) formula="Full_Xsecttbb/Full_Xsecttjj" ] = 0.0124514
+RooProduct::Full_k[ Full_Xsecttjj * 0.003891 ] = 0.999987
+RooProduct::Lumi[ Lumi_sys * betaLumi ] = 2318.27
+RooProduct::Vis_ModelNoCon_1[ Vis_Nttjj * Effttjj ] = 1377.4
+RooProduct::Vis_ModelNoCon_2[ Vis_k * NBkgtt * betaLumi ] = 94.7049
+RooProduct::Vis_ModelNoCon_3[ NBkgOther * betaLumi ] = 50.1982
+RooFormulaVar::Vis_Nttjj[ actualVars=(Vis_Xsecttjj,Lumi) formula="Vis_Xsecttjj*Lumi" ] = 11823.2
+RooProduct::Vis_XsecRatiottbbttjj[ Effttbbttjj * Vis_Xsecttbb_Xsecttjj ] = 0.0317159
+RooProduct::Vis_XsecRatiottbjttjj[ 2.43276 * Vis_XsecRatiottbbttjj ] = 0.0771572
+RooFormulaVar::Vis_Xsecttbb_Xsecttjj[ actualVars=(Vis_Xsecttbb,Vis_Xsecttjj) formula="Vis_Xsecttbb/Vis_Xsecttjj" ] = 0.0137255
+RooProduct::Vis_k[ Vis_Xsecttjj * 0.196 ] = 0.9996
+RooFormulaVar::betaAccttbb[ actualVars=(kappaAccttbb,alphaAccttbb) formula="pow(kappaAccttbb,alphaAccttbb)" ] = 1
+RooFormulaVar::betaAccttjj[ actualVars=(kappaAccttjj,alphaAccttjj) formula="pow(kappaAccttjj,alphaAccttjj)" ] = 1
+RooFormulaVar::betaEffttbb[ actualVars=(kappaEffttbb,alphaEffttbb) formula="pow(kappaEffttbb,alphaEffttbb)" ] = 1
+RooFormulaVar::betaEffttjj[ actualVars=(kappaEffttjj,alphaEffttjj) formula="pow(kappaEffttjj,alphaEffttjj)" ] = 1
+RooFormulaVar::betaLumi[ actualVars=(kappaLumi,alphaLumi) formula="pow(kappaLumi,alphaLumi)" ] = 1
+
+embedded datasets (in pdfs and functions)
+-----------------------------------------
+RooDataHist::DHttbb(CSV2,CSV3)
+RooDataHist::DHttbj(CSV2,CSV3)
+RooDataHist::DHttccLF(CSV2,CSV3)
+RooDataHist::DHBkgtt(CSV2,CSV3)
+RooDataHist::DHBkgOther(CSV2,CSV3)
+RooDataHist::DHBkgDD(CSV2,CSV3)
+
+generic objects
+---------------
+RooArgList::
+
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Minization --  Including the following contraint terms in minimization: (ConLumi,ConEffttjj,ConEffttbb,ConAccttjj,ConAccttbb)
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_Full_Model_DHData_with_constr) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minization -- RooMinuit::optimizeConst: activating const optimization
+[#1] INFO:Minization --  The following expressions have been identified as constant and will be precalculated and cached: (HPttbb,HPttbj,HPttccLF,HPBkgtt,HPBkgOther,HPBkgDD)
+ **********
+ **   13 **MIGRAD        6000           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ FCN=-7774.22 FROM MIGRAD    STATUS=INITIATE       42 CALLS          43 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Accttbb_sys   2.20000e-02   4.40000e-05   2.01358e-01  -1.74026e-01
+   2  Accttjj_sys   2.00000e-02   8.80000e-05   2.01358e-01   9.37546e+00
+   3  Effttbb_sys   2.69200e-01   7.00000e-03   2.01358e-01  -2.26576e+00
+   4  Effttjj_sys   1.16500e-01   2.36000e-03   2.01358e-01   4.32240e+01
+   5  Full_Xsecttbb   3.20000e+00   3.00000e-01   2.05758e-01  -8.01164e+00
+   6  Full_Xsecttjj   2.57000e+02   2.00000e+01   2.01881e-01   1.76243e+02
+   7  Lumi_sys     2.31827e+03   1.25000e+01   2.01374e-01   1.10210e+01
+   8  alphaAccttbb   0.00000e+00   1.00000e+00   2.01358e-01  -8.67960e-01
+   9  alphaAccttjj   0.00000e+00   1.00000e+00   2.01358e-01   4.64352e+01
+  10  alphaEffttbb   0.00000e+00   1.00000e+00   2.01358e-01  -1.06607e+01
+  11  alphaEffttjj   0.00000e+00   1.00000e+00   2.01358e-01   2.05319e+02
+  12  alphaLumi    0.00000e+00   1.00000e+00   2.01358e-01   6.01290e+01
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -7.4196e-01 -2.0758e-01  4.9026e-02  3.1990e-01  4.4731e-01  5.7519e-01  6.1142e-01  6.8290e-01  7.5086e-01  9.9313e-01  3.4769e+00  5.0430e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.746999 TO DIAGONAL.
+ FCN=-7854.51 FROM MIGRAD    STATUS=CONVERGED     952 CALLS         953 TOTAL
+                     EDM=0.000636877    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Accttbb_sys   2.18272e-02   2.38133e-04   5.00000e-01  -2.24079e-04
+   2  Accttjj_sys   1.95604e-02   7.78927e-04   3.03705e-01   1.27142e-03
+   3  Effttbb_sys   3.03993e-01   3.92542e-02   3.09839e-01   4.55979e-04
+   4  Effttjj_sys   1.04700e-01   1.90105e-02   1.36268e-01  -5.19036e-04
+   5  Full_Xsecttbb   3.53218e+00   7.22767e-01   1.98468e-02  -1.53028e-02
+   6  Full_Xsecttjj   2.08620e+02   6.39039e+00   4.37105e-03   1.25246e-01
+   7  Lumi_sys     2.25503e+03   1.19057e+02   2.74973e-01   1.04452e-03
+   8  alphaAccttbb   1.72387e-04   7.53516e-01   1.22087e-02  -9.29844e-04
+   9  alphaAccttjj  -2.30016e-02   6.79975e-01   1.02764e-02   2.75804e-02
+  10  alphaEffttbb   3.94939e-03   7.14338e-01   9.15926e-03  -2.26068e-03
+  11  alphaEffttjj  -9.86234e-02   3.15993e-01   4.03887e-03   1.37322e-01
+  12  alphaLumi   -1.05583e-02   6.32266e-01   9.21897e-03   4.28603e-02
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  42    NPAR= 12    ERR DEF=0.5
+ ELEMENTS ABOVE DIAGONAL ARE NOT PRINTED.
+  1.122e-03 
+  1.017e-07  6.289e-09 
+  7.062e-03  5.819e-07  4.518e-02 
+  6.605e-08 -2.802e-10  3.780e-07  5.506e-09 
+ -1.749e-02 -1.445e-06 -1.003e-01 -9.385e-07  5.687e-01 
+  1.791e-02 -8.278e-05  1.027e-01 -5.371e-05 -2.544e-01  4.090e+01 
+ -1.629e-02 -3.839e-05 -9.346e-02 -2.491e-05  2.312e-01 -7.328e+00  4.915e+01 
+ -1.093e-03 -9.016e-08 -6.264e-03 -5.857e-08  1.552e-02 -1.589e-02  1.445e-02  5.721e-01 
+  6.992e-04 -2.967e-06  4.001e-03 -1.925e-06 -9.934e-03 -5.688e-01 -2.638e-01 -6.199e-04  4.652e-01 
+ -1.015e-02 -8.384e-07 -5.822e-02 -5.447e-07  1.442e-01 -1.477e-01  1.342e-01  9.008e-03 -5.765e-03  5.138e-01 
+  8.095e-04 -3.446e-06  4.633e-03 -2.236e-06 -1.150e-02 -6.605e-01 -3.063e-01 -7.178e-04 -2.368e-02 -6.675e-03  9.998e-02 
+ -1.486e-03 -3.855e-06 -8.509e-03 -2.502e-06  2.111e-02 -7.346e-01 -2.945e-01  1.318e-03 -2.649e-02  1.225e-02 -3.075e-02 
+ -1.486e-03 -3.855e-06 -8.509e-03 -2.502e-06  2.111e-02 -7.346e-01 -2.945e-01  1.318e-03 -2.649e-02  1.225e-02 -3.075e-02  4.019e-01 
+ERR MATRIX NOT POS-DEF
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7      8      9     10     11     12
+        1  0.99737   1.000  0.038  0.992  0.027 -0.692  0.084 -0.069 -0.043  0.031 -0.423  0.076 -0.070
+        2  0.43038   0.038  1.000  0.035 -0.048 -0.024 -0.163 -0.069 -0.002 -0.055 -0.015 -0.137 -0.077
+        3  0.99678   0.992  0.035  1.000  0.024 -0.626  0.076 -0.063 -0.039  0.028 -0.382  0.069 -0.063
+        4  0.32501   0.027 -0.048  0.024  1.000 -0.017 -0.113 -0.048 -0.001 -0.038 -0.010 -0.095 -0.053
+        5  0.87263  -0.692 -0.024 -0.626 -0.017  1.000 -0.053  0.044  0.027 -0.019  0.267 -0.048  0.044
+        6  0.63907   0.084 -0.163  0.076 -0.113 -0.053  1.000 -0.163 -0.003 -0.130 -0.032 -0.327 -0.181
+        7  0.40737  -0.069 -0.069 -0.063 -0.048  0.044 -0.163  1.000  0.003 -0.055  0.027 -0.138 -0.066
+        8  0.06826  -0.043 -0.002 -0.039 -0.001  0.027 -0.003  0.003  1.000 -0.001  0.017 -0.003  0.003
+        9  0.36435   0.031 -0.055  0.028 -0.038 -0.019 -0.130 -0.055 -0.001  1.000 -0.012 -0.110 -0.061
+       10  0.61332  -0.423 -0.015 -0.382 -0.010  0.267 -0.032  0.027  0.017 -0.012  1.000 -0.029  0.027
+       11  0.61381   0.076 -0.137  0.069 -0.095 -0.048 -0.327 -0.138 -0.003 -0.110 -0.029  1.000 -0.153
+       12  0.43825  -0.070 -0.077 -0.063 -0.053  0.044 -0.181 -0.066  0.003 -0.061  0.027 -0.153  1.000
+ ERR MATRIX NOT POS-DEF
+ **********
+ **   18 **HESSE        6000
+ **********
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -3.9422e-01 -8.1668e-02  3.9680e-02  1.4927e-01  2.6473e-01  3.4366e-01  4.6309e-01  5.2810e-01  6.7916e-01  9.9314e-01  3.6343e+00  5.3808e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.399599 TO DIAGONAL.
+ FCN=-7854.51 FROM HESSE     STATUS=NOT POSDEF    131 CALLS        1084 TOTAL
+                     EDM=0.00149866    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE     INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  Accttbb_sys   2.18272e-02   2.41113e-04   2.00000e-02   4.30787e+01
+   2  Accttjj_sys   1.95604e-02   6.82578e-04   5.00000e-01  -1.40941e+01
+   3  Effttbb_sys   3.03993e-01   6.97827e-02   5.00000e-01   1.67958e+00
+   4  Effttjj_sys   1.04700e-01   1.63682e-02   5.00000e-01  -1.57431e+00
+   5  Full_Xsecttbb   3.53218e+00   2.21410e+00   3.96936e-03   2.14581e-02
+   6  Full_Xsecttjj   2.08620e+02   8.85424e+00   8.74210e-04  -4.26620e-01
+   7  Lumi_sys     2.25503e+03   1.10670e+02   5.00000e-01  -1.41076e+01
+   8  alphaAccttbb   1.72387e-04   8.43475e-01   2.44175e-03   3.44774e-05
+   9  alphaAccttjj  -2.30016e-02   7.84888e-01   2.05528e-03  -4.60033e-03
+  10  alphaEffttbb   3.94939e-03   1.02972e+00   3.66371e-04   7.89878e-04
+  11  alphaEffttjj  -9.86234e-02   4.19811e-01   8.07774e-04  -1.97260e-02
+  12  alphaLumi   -1.05583e-02   7.52738e-01   1.84379e-03  -2.11166e-03
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  42    NPAR= 12    ERR DEF=0.5
+ ELEMENTS ABOVE DIAGONAL ARE NOT PRINTED.
+  5.765e-04 
+ -1.753e-07  7.776e-09 
+  4.241e-03 -1.411e-06  3.237e-02 
+ -1.352e-07 -6.085e-10 -1.089e-06  3.079e-09 
+  3.798e-02 -1.265e-05  3.060e-01 -9.756e-06  3.335e+00 
+ -2.915e-02 -1.424e-04 -2.350e-01 -1.158e-04 -2.104e+00  7.865e+01 
+  4.177e-02 -8.449e-05  3.367e-01 -6.835e-05  3.014e+00 -1.572e+01  5.925e+01 
+  1.601e-03 -5.332e-07  1.290e-02 -4.113e-07  1.155e-01 -8.870e-02  1.271e-01  7.183e-01 
+ -8.550e-04 -3.558e-06 -6.885e-03 -2.918e-06 -6.171e-02 -6.844e-01 -4.067e-01 -2.601e-03  6.212e-01 
+  1.609e-02 -5.359e-06  1.297e-01 -4.134e-06  1.161e+00 -8.914e-01  1.277e+00  4.896e-02 -2.614e-02  1.076e+00 
+ -1.268e-03 -5.283e-06 -1.021e-02 -4.332e-06 -9.153e-02 -1.016e+00 -6.037e-01 -3.859e-03 -2.533e-02 -3.878e-02  1.767e-01 
+  2.759e-03 -5.825e-06  2.222e-02 -4.671e-06  1.991e-01 -1.085e+00 -2.135e-01  8.393e-03 -2.811e-02  8.435e-02 -4.173e-02 
+  2.759e-03 -5.825e-06  2.222e-02 -4.671e-06  1.991e-01 -1.085e+00 -2.135e-01  8.393e-03 -2.811e-02  8.435e-02 -4.173e-02  5.709e-01 
+ERR MATRIX NOT POS-DEF
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7      8      9     10     11     12
+        1  0.99346   1.000 -0.083  0.982 -0.101  0.866 -0.137  0.226  0.079 -0.045  0.646 -0.126  0.152
+        2  0.64292  -0.083  1.000 -0.089 -0.124 -0.079 -0.182 -0.124 -0.007 -0.051 -0.059 -0.143 -0.087
+        3  0.99700   0.982 -0.089  1.000 -0.109  0.931 -0.147  0.243  0.085 -0.049  0.695 -0.135  0.163
+        4  0.71356  -0.101 -0.124 -0.109  1.000 -0.096 -0.235 -0.160 -0.009 -0.067 -0.072 -0.186 -0.111
+        5  0.97429   0.866 -0.079  0.931 -0.096  1.000 -0.130  0.214  0.075 -0.043  0.613 -0.119  0.144
+        6  0.78482  -0.137 -0.182 -0.147 -0.235 -0.130  1.000 -0.230 -0.012 -0.098 -0.097 -0.273 -0.162
+        7  0.66368   0.226 -0.124  0.243 -0.160  0.214 -0.230  1.000  0.019 -0.067  0.160 -0.187 -0.037
+        8  0.10227   0.079 -0.007  0.085 -0.009  0.075 -0.012  0.019  1.000 -0.004  0.056 -0.011  0.013
+        9  0.43503  -0.045 -0.051 -0.049 -0.067 -0.043 -0.098 -0.067 -0.004  1.000 -0.032 -0.076 -0.047
+       10  0.79251   0.646 -0.059  0.695 -0.072  0.613 -0.097  0.160  0.056 -0.032  1.000 -0.089  0.108
+       11  0.74814  -0.126 -0.143 -0.135 -0.186 -0.119 -0.273 -0.187 -0.011 -0.076 -0.089  1.000 -0.131
+       12  0.53863   0.152 -0.087  0.163 -0.111  0.144 -0.162 -0.037  0.013 -0.047  0.108 -0.131  1.000
+ ERR MATRIX NOT POS-DEF
+[#1] INFO:Minization -- RooMinuit::optimizeConst: deactivating const optimization
