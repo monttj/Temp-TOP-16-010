@@ -41,9 +41,13 @@ void roo2DfitDilepton(TString Scenario = "Vis_NoNuisance"){
   RooRealVar *Full_Xsecttjj  = new RooRealVar("Full_Xsecttjj", "ttjj cross section Full Ph-Sp", 257.0,  150.0, 350.0);
   RooRealVar *Full_Xsecttbb  = new RooRealVar("Full_Xsecttbb", "ttbb cross section Full Ph-Sp",   3.2,  2.0, 5.0);
 
+  //RooRealVar *Vis_R  = new RooRealVar("Vis_R",  "Ratio Vis Ph-Sp",    0.02, 0, 0.1);
+  //RooRealVar *Full_R  = new RooRealVar("Full_R",  "Ratio Full Ph-Sp",    0.02, 0, 0.1);
+
   // Ratio Xsecttbb/Xsecttjj in Visible    
-  RooFormulaVar *Vis_Xsecttbb_Xsecttjj  = new RooFormulaVar("Vis_Xsecttbb_Xsecttjj",  "Xsecttbb/Xsecttjj Vis-PhSp",  "Vis_Xsecttbb/Vis_Xsecttjj",   RooArgList(*Vis_Xsecttbb,*Vis_Xsecttjj));
-  RooFormulaVar *Full_Xsecttbb_Xsecttjj = new RooFormulaVar("Full_Xsecttbb_Xsecttjj", "Xsecttbb/Xsecttjj Full-PhSp", "Full_Xsecttbb/Full_Xsecttjj", RooArgList(*Full_Xsecttbb,*Full_Xsecttjj));
+  RooFormulaVar *Vis_R  = new RooFormulaVar("Vis_R",  "Xsecttbb/Xsecttjj Vis-PhSp",  "Vis_Xsecttbb/Vis_Xsecttjj",   RooArgList(*Vis_Xsecttbb,*Vis_Xsecttjj));
+  RooFormulaVar *Full_R = new RooFormulaVar("Full_R", "Xsecttbb/Xsecttjj Full-PhSp", "Full_Xsecttbb/Full_Xsecttjj", RooArgList(*Full_Xsecttbb,*Full_Xsecttjj));
+
 
   // Efficiencies and Acceptances
   RooRealVar *Effttjj_nom  = new RooRealVar("Effttjj_nom",  "Nom. ttjj Efficiency",  0.1165);//, 0.05, 0.16);
@@ -120,17 +124,18 @@ void roo2DfitDilepton(TString Scenario = "Vis_NoNuisance"){
   WS->import(*Effttbb_nom);
   WS->import(*Accttjj_nom);
   WS->import(*Accttbb_nom);
-  WS->import(*Vis_Xsecttbb_Xsecttjj);
-  WS->import(*Full_Xsecttbb_Xsecttjj);
+  WS->import(*Vis_Xsecttjj);
+  WS->import(*Vis_R);
+  WS->import(*Full_R);
   WS->factory("expr::Effttbbttjj('Effttbb_nom/Effttjj_nom',Effttbb_nom,Effttjj_nom)");
   WS->factory("expr::Accttbbttjj('Accttbb_nom/Accttjj_nom',Accttbb_nom,Accttjj_nom)");
   // Visible Ph-Sp
-  WS->factory("prod::Vis_XsecRatiottbbttjj(Effttbbttjj,Vis_Xsecttbb_Xsecttjj)");
+  WS->factory("prod::Vis_XsecRatiottbbttjj(Effttbbttjj,Vis_R)");
   WS->factory("prod::Vis_XsecRatiottbjttjj(2.43276,Vis_XsecRatiottbbttjj)"); // 2.43276 from ttbj/ttbb
   WS->factory("expr::Vis_Nttjj('Vis_Xsecttjj*Lumi_nom', Vis_Xsecttjj,Lumi_nom)");
   WS->factory("prod::Vis_k(Vis_Xsecttjj,0.196)"); // 0.196 from 1/5.1
   // Full Ph-Sp
-  WS->factory("prod::Full_XsecRatiottbbttjj(Effttbbttjj,Accttbbttjj,Full_Xsecttbb_Xsecttjj)");
+  WS->factory("prod::Full_XsecRatiottbbttjj(Effttbbttjj,Accttbbttjj,Full_R)");
   WS->factory("prod::Full_XsecRatiottbjttjj(2.43276,Full_XsecRatiottbbttjj)"); // 2.43276 from ttbj/ttbb
   WS->factory("expr::Full_Nttjj('Full_Xsecttjj*Lumi_nom', Full_Xsecttjj,Lumi_nom)");
   WS->factory("prod::Full_k(Full_Xsecttjj,0.003891)"); // 0.196 from 1/257.
@@ -198,17 +203,17 @@ void roo2DfitDilepton(TString Scenario = "Vis_NoNuisance"){
   WS_Sys->factory("expr::betaAccttbb('pow(kappaAccttbb,alphaAccttbb)',kappaAccttbb[1.010],alphaAccttbb[-5.,5.])");
   WS_Sys->factory("prod::Accttbb(Accttbb_sys,betaAccttbb)");
 
-  WS_Sys->import(*Vis_Xsecttbb_Xsecttjj);
-  WS_Sys->import(*Full_Xsecttbb_Xsecttjj);
+  WS_Sys->import(*Vis_R);
+  WS_Sys->import(*Full_R);
   WS_Sys->factory("expr::Effttbbttjj('Effttbb/Effttjj',Effttbb,Effttjj)");
   WS_Sys->factory("expr::Accttbbttjj('Accttbb/Accttjj',Accttbb,Accttjj)");
   // Visible Ph-Sp
-  WS_Sys->factory("prod::Vis_XsecRatiottbbttjj(Effttbbttjj,Vis_Xsecttbb_Xsecttjj)");
+  WS_Sys->factory("prod::Vis_XsecRatiottbbttjj(Effttbbttjj,Vis_R)");
   WS_Sys->factory("prod::Vis_XsecRatiottbjttjj(2.43276,Vis_XsecRatiottbbttjj)"); // 2.43276 from ttbj/ttbb
   WS_Sys->factory("expr::Vis_Nttjj('Vis_Xsecttjj*Lumi', Vis_Xsecttjj,Lumi)");
   WS_Sys->factory("prod::Vis_k(Vis_Xsecttjj,0.196)"); // 0.196 from 1/5.1
   // Full Ph-Sp
-  WS_Sys->factory("prod::Full_XsecRatiottbbttjj(Effttbbttjj,Accttbbttjj,Full_Xsecttbb_Xsecttjj)");
+  WS_Sys->factory("prod::Full_XsecRatiottbbttjj(Effttbbttjj,Accttbbttjj,Full_R)");
   WS_Sys->factory("prod::Full_XsecRatiottbjttjj(2.43276,Full_XsecRatiottbbttjj)"); // 2.43276 from ttbj/ttbb
   WS_Sys->factory("expr::Full_Nttjj('Full_Xsecttjj*Lumi', Full_Xsecttjj,Lumi)");
   WS_Sys->factory("prod::Full_k(Full_Xsecttjj,0.003891)"); // 0.196 from 1/257.
@@ -251,6 +256,25 @@ void roo2DfitDilepton(TString Scenario = "Vis_NoNuisance"){
 
   if(Scenario == "Vis_Nuisance")  WS_Sys->pdf("Vis_Model")->fitTo(*DHData);
   if(Scenario == "Full_Nuisance") WS_Sys->pdf("Full_Model")->fitTo(*DHData);
+
+  
+  RooAbsReal *nll_ratio = WS->pdf("Vis_Model")->createNLL(*DHData);
+  RooMinimizer m(*nll_ratio);
+  m.migrad();
+  m.hesse();
+  RooFitResult *r = m.save() ;
+  
+  gStyle->SetOptStat(0);
+  gStyle->SetPadTopMargin(0.125);
+  gStyle->SetPadBottomMargin(0.125);
+  gStyle->SetPadLeftMargin(0.2);
+  gStyle->SetPadRightMargin(0.05);
+  gStyle->SetLabelOffset(0.001, "XYZ");
+  gStyle->SetLabelSize(0.05, "XYZ");
+  TCanvas *c = new TCanvas("c","corrleation",600,600);
+  r->correlationHist()->Draw("coltext") ;
+  c->Print("correlation.pdf");
+
  
 }
 
